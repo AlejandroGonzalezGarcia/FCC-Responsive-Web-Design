@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="landing-page.css"/>
+    <meta charset="UTF-8"/>
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" />
+        <nav id="nav-bar">
+          <ul>
+            <li>
+              <a class="nav-link" href="#Qualities">
+                Qualities
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="#Youtube">
+                Watch our video
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="#Prices">
+                Prices
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section id="hero">
+        <h2>
+          The Good Stuff Awaits. Sign up.
+        </h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input id="email"
+          name="email"
+          type="email"
+    placeholder="something@yes.com"
+          required/>
+          <input id="submit"
+          type="submit"
+          value="start"/>
+        </form>
+      </section>
+     <section id="Youtube">
+       <h1>Enjoy this video</h1>
+        <iframe
+        id="video"
+        src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"
+        allowfullscreen
+        ></iframe>
+      </section> 
+      <section id="Qualities">
+        <div class="grid">
+          <div class="description">
+            <h2>Why Us?</h2>
+            <p>
+              We will do whatever you want whenever you want.
+            </p>
+          </div>
+          <div class="description">
+            <h2>Where Are We?</h2>
+            <p>
+              We can be found anywhere you are. Just give us a call.
+            </p>
+          </div>
+          <div class="description">
+            <h2>Gratest Trombones Around</h2>
+            <p>
+              Nobody makes trombones like we do. Our quality of build, customer service, and overall delivery is unmatched.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="Prices">
+        <div class="product" id="one">
+          <div class="level">Level One</div>
+          <h2>$3000</h2>
+          <ul>
+            <li>Highest quality trombone.</li>
+            <li>Only buy. if you are serious.</li>
+          </ul>
+          </div>
+        </div>
+        <div class="product" id="two">
+          <div class="level">Level Two</div>
+          <h2>$2000</h2>
+          <ul>
+            <li>Medium quality trombone</li>
+            <li>Buy if you have some experience.</li>
+          </ul>
+        </div>
+        <div class="product" id="three">
+          <div class="level">Level Three</div>
+          <h2>$1000</h2>
+          <ul>
+            <li>Lowest quality trombone</li>
+            <li>Buy if you are a beginner</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
