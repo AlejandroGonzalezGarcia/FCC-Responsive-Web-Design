@@ -1,0 +1,45 @@
+h1, h2 {
+    text-align: center;
+  }
+  
+  body {
+    background-color: grey;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+  
+  ul {
+      max-width: 550px;
+      margin: 0 auto 50px auto;
+      text-align: left;
+  }
+  
+  
+  #main {
+      padding: 15px;
+      border-radius: 5px;
+      background: #eee;
+  }
+  
+  figcaption {
+    margin: 0;
+    padding: 0;
+  }
+  
+  p {
+    display: block;
+  }
+  
+  #img-div {
+      background: white;
+      padding: 10px;
+      margin: 0;
+  }
+  
+  #image {
+    display: block;
+    align-items: center;
+    height: auto;
+    width: 100%;
+  }
