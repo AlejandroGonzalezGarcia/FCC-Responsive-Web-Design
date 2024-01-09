@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta viewport="viewport" content="width=device-width, initial-scale=1."/>
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="documentation-page.css" />
+  </head> 
+  <body>
+    <nav id="navbar">
+      <header>Python For Dummies</header>
+      <ul>
+        <li><a class="nav-link" href=#Introduction>Introduction</a>
+        <li><a class="nav-link" href=#Why_Python?>Why Python?</a>
+        <li><a class="nav-link" href=#Hello_World>Hello World </a>
+        <li><a class="nav-link" href=#Variables>Variables </a>
+        <li><a class="nav-link" href=#Logic_Operators>Logic Operators</a>
+        <li><a class="nav-link" href=#Conditional_Statements>Conditional Statements</a>
+        <li><a class="nav-link" href=#Loops>Loops</a>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+          Welcome to my brief Python tutorial which serves as a project for the FreeCodeCamp Responsive Web Design certificate! In this page, you will find a short introduction to python as well as some beginner concepts. This is not intended to be a proper educational resource.
+        </p>
+      </section>
+      <section class="main-section" id="Why_Python?">
+        <header>Why Python?</header>
+        <p>
+          There are a variety of reasons as to why you may be interested in taking on Python, whether it be your first programming language or not. The fact of the matter is that Python is a very capable language that is incredibly popular due to its flexibility and (relative) user-friendliness. Some of the most popular fields that utilize Python predominantly are listed below.
+          <ul>
+            <li>Data Science</li>
+            <li>Machine Learning</li>
+            <li>Scientific Computing</li>
+            <li>Signal Processing</li>
+            <li>Task Automation</li>
+          </ul>
+        </p>
+      </section>
+      <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
+        <p>Let's jump right into showing you how to write the iconic "Hello World" program in Python. The code can be found below.
+        </p>
+          <code id="block" 
+          >Print("Hello World")
+          </code>
+        <p>Now how you execute the code depends on what environment you are coding in. If you are running a Jupyter Notebook, for example, the quickest way would simply be to press [Shift] + [Enter]. The installation and preparation of environments to code in will not be covered here.
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>We will now briefly go over how variables work. In order to assign a variable, you can execute something similar to this:
+        </p>
+        <code id="block"
+        >x=5
+        </code>
+        <p>
+          What you have done is assign a value of 5 to the variable x. If you the execute 
+        </p>
+        <code id="block"
+        >Print(x)
+        </code>
+        <p>
+          you will see the following output
+        </p>
+        <code id="block"
+        >output: 5
+        </code>
+        <p>
+          And just like that, you have assigned a value to your first variable. This variable can now be used in equations and can be overridden by simply executing a similar line of code but by changing 5 to another value.
+      </section>
+      <section class="main-section" id="Logic_Operators">
+        <header>Logic Operators</header>
+        <p>Time to go into Logic operators. As daunting as the name may be, note that a logic operator at its core simply connects two or more expressions such that the value of the joined expressions depends entirely on the individual expressions as well as the specific operator used. Common logic operators are the AND, OR, and NOT operators.
+        </p>
+        <p>
+          The AND operator will return the boolean TRUE if the two (or more) expressions that it is joining hold true. In Python, the AND operator is simply expressed as <code >and</code>. For example,
+        </p>
+        <code id="block"
+        >6&gt;4 and 4&lt;8
+        </code><br>
+        <code id="block"
+          >output: True
+        </code>
+        <p>The OR operator will return a boolean TRUE if either (or any) of the expressions seperated by the operator hold true. In Python, the OR operator is represented by <code>or</code>. For example,
+        </p>
+        <code id="block"
+        >6&gt;4 or 4==8
+        </code><br>
+        <code id="block"
+        >output: True
+        </code>
+        <p>
+          Lastly, the NOT operator will return true if one expression does not satisfy the other. This can get a little tricky, but its most common use is the inversion of boolean values. In Python, this operator is used as <code>not</code>. For example,
+        </p>
+        <code id="block"
+        >not True
+        </code><br>
+        <code id="block"
+        >output: False
+        </code>
+        <p/>
+      </section>
+      <section class="main-section" id="Conditional_Statements">
+        <header>Conditional Statements</header>
+        <p>In Python, we utilize the <code>if</code>, <code>elif</code>, and <code>else</code> conditional statements, typed as presented. Conditional statements will simply execute what is nested within them so long as the condition specified is met.
+        </p>
+        <p>
+          The <code>if</code> statement will execute what is specified within it if the expression that follows the statement holds true. For example.
+        </p>
+        <code id="block"
+        >x = 5</code><br>
+        <code id="block"
+        >if x&gt;3: <br> print(yes)
+        <br><br>
+        output: yes
+        </code>
+        <p>
+          The <code>elif</code> statement will require yet another condition and will return True if the condition specified after the <code>if</code> statement did not hold true but the condition specified by the <code>elif</code> statement does hold true. For example,
+        </p>
+        <code id="block"
+        >x=5<br>
+        if x&lt;3:<br>
+        print(yes)<br>
+        elif x&gt;3:<br>
+        print(no)
+        <br><br>
+        output: no
+        </code>
+        <p>
+          The <code>else</code> statement will execute what is nested within it if the <code>if</code> statement does not hold true and if none of the <code>elif</code> statements hold true. For example,
+        </p>
+        <code id="block"
+        >x=5<br>
+        if x&lt;5:<br>
+        print(yes)<br>
+        elif x&gt;5:<br>
+        print(no)<br>
+        else:<br>
+        print(absolutely)
+        <br><br>
+        output: absolutely
+        </code>
+        <br><br>
+      </section>
+      <section class="main-section" id="Loops">
+        <header>Loops</header>
+        <p>
+          When coding in Python, you will make use of the For and While loops, implemented as <code>for</code> and <code>while</code>. 
+        </p>
+        <p>
+          The <code>for</code> loop serves as an iterator and is useful for iterating through lists, dictionaries, or strings. For example,
+        </p>
+        <code id="block">
+          x=[1,2,3]<br>
+          for i in x:<br>
+          print(i)
+          <br><br>
+          output: 1<br>
+          output: 2<br>
+          output: 3
+        </code>
+        <p>The <code>while</code> loop, on the other hand, will execute the code nested within in so long as the condition specified holds true. For example,
+        </p>
+        <code id="block">
+          x=0<br>
+          while x&lt;5:<br>
+          print(x)<br>
+          x += 1
+          <br><br>
+          output: 0<br>
+          output: 1<br>
+          output: 2<br>
+          output: 3<br>
+          output: 4<br>
+      </section>
+    </main>
+  </body>
+</html>
