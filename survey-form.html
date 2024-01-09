@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey-form.css"/>
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+    <p id="description">Please fill out this form with all the required information.</p>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label">Please enter your name</label><input id="name" name="name" type="text" placeholder="First Name Last Name" required/></label>
+      <label id="email-label">Please enter your email address <input id="email" name="email" type="email" placeholder="something@something.com"required></input>
+      <label id="number-label">Please enter your number <input id="number" name="number" type="number" min=0 max=9 placeholder="111-111-111" required></input>
+    </fieldset>
+    <fieldset>
+      <label>How did you hear about us?</label>
+      <select id="dropdown" name="dropdown">
+        <option value="">select one</option>
+        <option value="1">YouTube Ad</option>
+        <option value="2">Newspaper</option>
+      </select>
+    </fieldset>
+    <fieldset>
+          <legend>Feedback (required)</legend>
+      <label><input id="feedback" name="feedback" type="radio" class="inline" value="0" checked />Strongly recommend</label>
+          <label><input id="feedback" name="feedback" type="radio" value="1" class="inline" />Somewhat recommend</label>
+        <label> <input id="feedback" name="feedback" type="radio" value="2" class="inline"/>Do not recommend</label>
+    </fieldset>
+    <fieldset>
+      <legend>Please select the things you liked!</legend>
+      <label for="check"><input type="checkbox" class="inline" id="check" value=0 required/>The layout</label>
+      <label for="check"><input type="checkbox" class="inline" id="check" value=1 required/>The colours</label>
+      <label for="check"><input type="checkbox" class="inline" id="check" value=2 required/>The content</label>
+      <label for="check"><input type="checkbox" class="inline" id="check" value=3 required/>The manoeuvrability</label>
+    </fieldset>
+    <fieldset>
+      <label for="additional">Please feel free to leave any additional comments or feedback here! <textarea id="additional" name="additional" rows="3" cols="30" placeholder="You could improve on..."></textarea></label>
+    </fieldset>
+    <fieldset>
+      <p>Click submit and you're good to go! Thanks!</p>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+</html>
